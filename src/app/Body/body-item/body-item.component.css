@@ -1,0 +1,77 @@
+
+.all{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.student-name, .fee-balance{
+    margin-left: 50px;
+}
+
+.student-name input{
+    margin-top: 5px;
+    width: 300px;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+.fee-balance input {
+    margin-top: 5px;
+    width: 300px;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+.btn{
+    margin-left: 50px;
+    margin-top: 1em;
+    background-color: coral;
+    color: white;
+    width: 300px;
+    height:30px;
+}
+
+.student-name .add{
+    background-color: coral;
+    width: 300px;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.parag {
+    background-color: coral;
+    width: 600px;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#btn{
+    border-style: none;
+}
+
+.buttons{
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-style: none;
+}
+
+.buttons button {
+    background-color: coral;
+    height: 30px;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}

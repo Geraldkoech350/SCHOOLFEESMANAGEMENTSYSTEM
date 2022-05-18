@@ -1,0 +1,57 @@
+<div class="all">
+  <!-- BEGIN OF BODY ITEM DIV -->
+
+  <div class="body-item">
+    <form (ngSubmit)="addStudents(f)" #f="ngForm">
+      <div class="student-name">
+        <h2 class="add">Add A Student</h2>
+        <p *ngIf="errMsg" style="color: red; margin: 0">{{ errMsg }}</p>
+        <label>{{ studentName }}</label
+        ><br />
+        <input type="text" name="name" ngModel required />
+      </div>
+
+      <div class="fee-balance">
+        <label>{{ feeBalance }}</label
+        ><br />
+        <input type="number" name="amount" ngModel required />
+      </div>
+
+      <button style="border-style: none" type="submit" class="btn">Add a Student</button>
+    </form>
+  </div>
+
+  <!-- END OF BODY ITEM DIV -->
+
+  <!-- BEGIN OF DIV LOGIC -->
+  <div class="logic">
+    <!-- <button class="btn" (click)=" addStudents()">Add Student</button> -->
+    <div class="header">
+      <!-- BEGIN OF PARAGRAPH DIV HERE -->
+      <div class="parag">
+        <p>Student name</p>
+        <p>Student balance</p>
+      </div>
+      <!-- END OF PARAGRAPH DIV HERE -->
+
+      <div class="buttons">
+        <!-- BEGIN OF BUTTONS DIV HERE -->
+        <button id="btn" (click)="showAllStudents()">Get All Students</button>
+        <button id="btn" (click)="getStudentWithBalance()">
+          Get Student With Balance
+        </button>
+        <button id="btn" (click)="getStudentWBalance()">Get Student W/O Balance</button>
+      </div>
+      <!-- END OF BUTTONS DIV HERE -->
+    </div>
+
+    <p *ngIf="students.length === 0"><em>No Students...</em></p>
+    <div class="content" *ngFor="let student of selectedStudents">
+      <p>{{ student.name }}</p>
+      <p [ngStyle]="{ color: student.amount <= 0 ? 'green' : 'red' }">
+        {{ student.amount }}
+      </p>
+    </div>
+  </div>
+  <!-- END OF DIV LOGIC -->
+</div>

@@ -1,0 +1,17 @@
+.nav-name {
+    padding: 5px;
+    display: flex;
+    height: 10px;
+    flex-direction: row;
+    background-color:mediumturquoise;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+    text-transform: uppercase;
+    color:white;
+}
+.logo-img{
+    width: 80px;
+    height: 80px;
+}
+
